@@ -1,4 +1,90 @@
+@import "./fonts.css";
+
+/* CSS reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
 body {
-  min-height: 100vh;
-  background-color: blue;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Actual style */
+body {
+  font-family: 'Sriracha', Helvetica, Arial, sans-serif;
+}
+
+.container {
+  height: 100vh;
+  background-color: #FEFEFB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pop-up-modal {
+  background-color: #8D69CF;
+  height: 18rem;
+  width: 50rem;
+
+}
+
+h1 {
+font-family: 'Sriracha';
+font-size: 4rem;
+text-align: center;
+margin-top: 1rem;
+}
+
+button {
+  height: 4.5rem;
+  width: 16rem;
+  font-family: 'Sriracha';
+  font-size: 3rem;
+  border: none;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4.25rem;
+}
+
+button.yes {
+  background-color: #DBE133;
+}
+
+span {
+  font-size: 12.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.container.no {
+  background-color: #DBE133;
 }
