@@ -77,9 +77,19 @@ button.yes {
   background-color: #DBE133;
 }
 
+button.no {
+  background-color: #95B5DD;
+}
+
+button.no:hover {
+  background-color: #8CA7C9;
+}
+
 span {
   font-size: 12.5rem;
 }
+
+
 
 .hidden {
   display: none;
